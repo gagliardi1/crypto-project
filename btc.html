@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/images/imagen wallet.png">
+    <title>BTC</title>
+</head>
+<body>
+    <header><h1>Sobre Bitcoin</h1></header>
+<hr>
+    <div> <br>
+        <h2 align="center">Introduccion</h2> <br>
+        <hr> <br>
+        <br>
+        <p> Una forma de dinero en efectivo electrónico puramente peer-to-peer debería
+            permitir enviar pagos online directamente entre las partes y sin pasar a través de una
+            institución financiera. Las firmas digitales son parte de la solución, pero los beneficios
+            principales desaparecen si un tercero de confianza sigue siendo imprescindible para
+            prevenir el doble gasto. Proponemos una solución para el problema del doble gasto
+            usando una red peer-to-peer. La red sella las transacciones en el tiempo en una cadena
+            continua de proof-of-work2
+            basada en hash3
+            , estableciendo un registro que no se puede
+            modificar sin rehacer la proof-of-work. La cadena más larga no solo sirve de prueba
+            efectiva de la secuencia de eventos, sino que también demuestra que procede del conjunto
+            de CPU más potente. Mientras la mayoría de la potencia CPU esté controlada por nodos
+            que no cooperen para atacar la propia red, se generará la cadena más larga y se aventajará
+            a los atacantes. La red en sí misma precisa de una estructura mínima. Los mensajes se
+            transmiten en base a "mejor esfuerzo"
+            4
+            , y los nodos pueden abandonar la red y regresar a
+            ella a voluntad, aceptando la cadena proof-of-work más larga como prueba de lo que ha
+            sucedido durante su ausencia</p>
+
+            <h2 align="center">Info util</h2>
+        <hr>
+        <br>
+        <p>El comercio en Internet ha llegado a depender casi exclusivamente de las instituciones financieras
+            como terceros de confianza en el proceso de los pagos electrónicos. A pesar de que el sistema
+            funciona suficientemente bien en la mayor parte de las transacciones, sufre la debilidad inherente
+            al modelo basado en confianza. Las transacciones completamente irreversibles no son posibles
+            debido a que las instituciones financieras no pueden evitar mediar en las disputas. El coste de esta
+            mediación incrementa los costes de transacción, limitando su tamaño mínimo útil y eliminando la
+            posibilidad de realizar pequeñas transacciones ocasionales, y hay un coste mayor al perderse la
+            posibilidad de hacer transacciones irreversibles para servicios irreversibles. Con la posibilidad de
+            ser reversible, la necesidad de confianza crece. Los comerciantes deben tener precaución con sus
+            clientes, solicitándoles más datos de los que de otra forma serían necesarios. Se acepta como
+            inevitable un cierto porcentaje de fraude. Esos costes y la incertidumbre en los pagos se pueden
+            evitar cuando se usa dinero físico en persona, pero no existe mecanismo que permita realizar
+            pagos a través de un canal de comunicación sin la participación de un tercero de confianza. 
+            Es necesario, por tanto, un sistema de pago electrónico basado en prueba criptográfica en lugar
+            de confianza, permitiendo que dos partes interesadas realicen transacciones directamente entre
+            ellas, sin necesidad de un tercero de confianza. Si las transacciones son computacionalmente
+            imposibles de revertir, protegerán a los vendedores del fraude, y cualquier mecanismo de depósito
+            de garantía se puede implementar fácilmente para proteger al comprador. En este documento
+            proponemos una solución al problema del doble gasto usando un servidor de sellado de tiempo,
+            distribuido y peer-to-peer, para generar la prueba computacional del orden cronológico de las
+            transacciones. El sistema es seguro mientras los nodos honestos controlen colectivamente más
+            potencia CPU que cualquier grupo cooperante de nodos atacantes.</p>
+
+            <h2 align="center">Transacciones</h2>
+            <hr>
+            <br>
+            <p>Definimos una moneda electrónica como una cadena de firmas digitales. Cada propietario
+                transfiere la moneda al siguiente propietario firmando digitalmente un hash de la transacción
+                previa y la clave pública del siguiente propietario, y añadiendo ambos al final de la moneda. El
+                beneficiario puede verificar las firmas para verificar la cadena de propiedad.</p>
+                <br>
+            <p>El problema, por supuesto, es que el beneficiario no puede verificar que uno de los propietarios no
+                haya gastado dos veces la misma moneda. La solución habitual es introducir una autoridad central
+                de confianza, o casa de la moneda, que comprueba cada transacción para que eso no se produzca.
+                Tras cada transacción, la moneda debe regresar a la casa de la moneda para distribuir una nueva
+                moneda, y solo las monedas emitidas directamente desde ella están libres de la sospecha de doble
+                gasto. El problema de esta solución es que el destino de todo el sistema de dinero depende de la
+                compañía que gestiona la casa de la moneda, por la cual pasa cada transacción, igual que un
+                banco. 
+                Necesitamos una forma de que el beneficiario sepa que los propietarios previos no han firmado
+                transacciones anteriores. Para nuestros propósitos, la transacción más temprana es la que cuenta,
+                así que no nos preocupamos de los intentos de doble gasto posteriores. La única manera de
+                confirmar la ausencia de una transacción es tener conocimiento de todas las transacciones. En el
+                modelo de la casa de la moneda, esta tiene conocimiento de todas las transacciones y decide cuáles
+                llegaron primero. Para lograr esto sin la participación de una parte de confianza, las transacciones
+                han de ser anunciadas públicamente [1], y necesitamos un sistema para que los participantes estén
+                de acuerdo en un único historial del orden en que fueron recibidas. El beneficiario necesita prueba
+                de que en el momento de la transacción la mayor parte de los nodos estaban de acuerdo en que esa
+                fue la primera que se recibió.</p> <br>
+    <img src="/images/btcfoto.jpg" alt="fotobtc" width="50%"> 
+    </div>
+<br> <br> 
+    <footer>
+        Todos los derechos reservados® 
+        <br>
+        Copyright © 
+        <br>
+        Nuestro Instagram <a href="https://www.instagram.com/"  target="_blank"> ¡Click aqui! </a> 
+        
+        
+        
+    </footer>
+</body>
+</html>
