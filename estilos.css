@@ -1,5 +1,6 @@
 body {
    background-image: url(https://get.wallhere.com/photo/green-background-texture-solid-color-1046882.jpg);
+   background-image: linear-gradient(to bottom, black, rgb(35, 102, 35));
 } 
 
 
@@ -85,7 +86,7 @@ div img {
     border-radius: 50%;
     display:block;
     margin:auto;
-        
+    
 }
 
 footer {
@@ -126,6 +127,7 @@ div form {
 
 
 
+
     .container {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
@@ -140,3 +142,34 @@ div form {
       .contenido-2 { grid-area: contenido-2; }
       .contenido-3 { grid-area: contenido-3; 
                      justify-self: center;}
+
+
+
+.transicion {
+
+ 
+        width: 200px;
+        height: 200px;
+        background: rgb(17, 6, 6);
+        transition: width 1s;
+        
+      }
+      
+      img:hover {
+        width: 300px;
+      }
+
+
+
+      div img  {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s, height 2s, transform 2s;
+      }
+      
+      div img:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+      }
