@@ -109,6 +109,8 @@ img {
 }
 
 
+
+
 div form {
     margin: 120px;
     font-size: larger;
@@ -130,9 +132,9 @@ div form {
 
     .container {
         display: grid; 
+        grid-template-rows: 1fr ;
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr ;  
-        gap: 0px 0px; 
+       
         grid-template-areas: 
           "contenido-1 contenido-2"
           "contenido-3 contenido-3";
@@ -173,3 +175,32 @@ div form {
         height: 300px;
         transform: rotate(360deg);
       }
+
+
+#grilla {
+
+    display: grid;
+    grid-template-areas: 
+    "section section"
+    "section"
+    "footer";
+
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+}
+
+.border {
+
+    border: 2px solid yellow;
+}
+
+section {
+    grid-area: section;
+    padding: 25px;
+}
+
+footer {
+    grid-area: footer;
+}
