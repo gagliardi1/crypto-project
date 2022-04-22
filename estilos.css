@@ -134,7 +134,7 @@ div form {
         display: grid; 
         grid-template-rows: 1fr ;
         grid-template-columns: 1fr 1fr; 
-       
+        
         grid-template-areas: 
           "contenido-1 contenido-2"
           "contenido-3 contenido-3";
